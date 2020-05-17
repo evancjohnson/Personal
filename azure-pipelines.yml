@@ -7,13 +7,12 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
-
+  name: Azure Pipelines
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- task: ArchiveFiles@2
+  displayName: 'Archive src'
+  inputs:
+    rootFolderOrFile: src
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: drop'

@@ -6,8 +6,6 @@
 trigger:
 - master
 
-pool:
-  name: Azure Pipelines
 steps:
 - task: ArchiveFiles@2
   displayName: 'Archive src'

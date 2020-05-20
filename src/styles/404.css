@@ -1,0 +1,15 @@
+.not-found-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-found-image{
+    margin:2em;
+}
+
+a{
+    color: var(--black);
+    text-decoration: underline;
+    font-weight: bold;
+}

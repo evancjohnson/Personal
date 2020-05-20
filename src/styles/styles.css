@@ -5,8 +5,14 @@
   --red: #FF6B6B;
   --white: #F7FFF7;
   --blue: #80CED7;
-  --black: #292F36;
+  --black:  #292F36;
   --green: #6cbe45;
+
+   /* Base spacing unit. */
+   --spacing-unit: 6px;
+
+   /* Margin size. No unit, because it's a multiple of the spacing unit. */
+  --margins: 2;
 }
 
 * {

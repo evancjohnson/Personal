@@ -47,6 +47,14 @@
     padding: 1em;
 }
 
+.project-item {
+    padding: .5em;
+}
+
+.education-item{
+    padding: .5em;
+}
+
 #education {
     padding: var(--base-padding);
 }

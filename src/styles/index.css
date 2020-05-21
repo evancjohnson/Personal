@@ -1,6 +1,69 @@
+:root{
+    --base-padding: 1em;
+}
 .landing {
-    display: flex;
+    display: grid;
+    padding: var(--base-padding);
 }
-.landing-image {
-    margin: 1em;
+
+#technology{
+    padding: var(--base-padding);
 }
+
+.technologies-list{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.technology-item {
+    padding: 1em;
+}
+
+#education {
+    padding: var(--base-padding);
+}
+
+@media (min-width: 576px) { 
+    .technologies-list{
+        grid-template-columns: 1fr;
+    }
+    .technology-item {
+        padding: 0;
+    }
+ }
+
+
+@media (min-width: 768px) { 
+    .technologies-list{
+        grid-template-columns: 1fr 1fr;
+    }
+    .technology-item {
+        padding: .5em;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .landing {
+        grid-template-columns: 1fr 1fr;
+    } 
+    .technologies-list{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .landing {
+        grid-template-columns: 1fr 1fr;
+    } 
+    .technologies-list{
+        display: grid;
+        grid-template-columns:  
+        [col] 1fr
+        [col] 1fr
+        [col] 1fr
+        [col] 1fr;
+        /* grid-template-rows: repeat(2, 100px auto 20%); */
+    }
+ }

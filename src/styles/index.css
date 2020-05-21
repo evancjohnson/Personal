@@ -1,6 +1,28 @@
 :root{
     --base-padding: 1em;
+    --twitter-color: #1DA1F2;
+    --javascript-color: #F0DB4F;
+    --angular-color: #dd1b16;
+    --html-color: #e34c26;
 }
+
+.twitter {
+    color: var(--twitter-color);
+}
+
+.javascript{
+    color: var(--javascript-color);
+}
+
+.angular {
+    color: var(--angular-color);
+}
+
+.html{
+    color: var(--html-color);
+}
+
+
 .landing {
     display: grid;
     padding: var(--base-padding);
@@ -64,6 +86,5 @@
         [col] 1fr
         [col] 1fr
         [col] 1fr;
-        /* grid-template-rows: repeat(2, 100px auto 20%); */
     }
  }

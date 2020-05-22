@@ -26,6 +26,10 @@
     color: #9381FF;
 }
 
+.green{
+    color: var(--green);
+}
+
 .btn {
     background-color: #B8B8FF;
     border: none; 

@@ -26,6 +26,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
             wrapper.appendChild(item_element);
         }
+        wrapper.style.display = "none";
+        wrapper.classList.add("fade-in");
+        wrapper.style.display = "";
+        
     }
 
     function SetupPagination(items, wrapper, rowsPerPage) {

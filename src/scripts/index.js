@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     var service = new GitHubService("microsoft");
     var projects = document.querySelectorAll("#projects");
 
-    setTimeout(function(){ setup }, 3000);
+    setTimeout(function(){ setup() }, 3000);
 
     function setup() {
         service.getRepositories().then(function (response) {

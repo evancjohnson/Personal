@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/index.css">
     <script src="https://kit.fontawesome.com/24873183d0.js" crossorigin="anonymous"></script>
+    <script type="module" src="Scripts/index.js"></script>
     <title>Evan Johnson</title>
 </head>
 
@@ -18,8 +19,10 @@
                 <h3>Software Developer</h3>
                 <p>I am a software developer that makes applications for both Frontend and Backend applications.</p>
                 <div>
-                    <button class="btn"><a href="https://github.com/evancjohnson" target="_blank"><i class="fab fa-github fa-2x"></i></a></button>
-                    <button class="btn"><a href="https://twitter.com/evancjjohnson" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></button>
+                    <button class="btn"><a href="https://github.com/evancjohnson" target="_blank"><i
+                                class="fab fa-github fa-2x"></i></a></button>
+                    <button class="btn"><a href="https://twitter.com/evancjjohnson" target="_blank"><i
+                                class="fab fa-twitter fa-2x"></i></a></button>
                 </div>
             </div>
             <div class="landing-image">
@@ -79,6 +82,7 @@
             </div>
         </div>
         <hr>
+        <p class="demo"></p>
         <div id="projects">
             <div class="">
                 <div style="display: flex; align-items: center;">
@@ -87,9 +91,9 @@
                 </div>
                 <p>Creating projects allows me to share my code with the world.</p>
             </div>
-            <div class="project-item">
-                <p>Project list coming soon</p>
-            </div>
+            <div id="project-list" class="project-item"></div>
+                
+            <div class="pagenumbers" id="pagination"></div>
         </div>
         <hr>
     </div>

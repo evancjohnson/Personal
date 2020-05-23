@@ -144,9 +144,9 @@
     .technology-item {
         padding: 0;
     }
-    .github-item-metadata{
-        /* flex-direction: column; */
-    }
+    /* .github-item-metadata{
+        flex-direction: column;
+    } */
  }
 
 

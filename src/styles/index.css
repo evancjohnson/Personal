@@ -6,8 +6,14 @@
     --html-color: #e34c26;
 }
 
+
+
 .github-item a {
     color: #9381FF;
+}
+
+.white {
+    color: var(--white);
 }
 
 .github-item p {
@@ -15,8 +21,9 @@
 }
 
 .github-item {
-    background-color: #E8E8E8 ;
-    border: 1px black solid;
+    background-color: var(--grey) ;
+    color: var(--black);
+    border: 1px var(--black) solid;
     padding: .5em;
     border-radius: 4px;
     font-size: 1.25em;
@@ -99,10 +106,6 @@
     padding: 1em;
 }
 
-.project-item {
-    padding: .5em;
-}
-
 .education-item{
     padding: .5em;
 }
@@ -140,6 +143,63 @@
   -o-animation: fadeIn ease 5s;
   -ms-animation: fadeIn ease 5s;
 }
+
+  .text-input__loading--line {
+    margin: 10px;
+    -webkit-animation: pulse 1s infinite ease-in-out;
+            animation: pulse 1s infinite ease-in-out;
+  }
+
+  .text-input__loading--line:empty {
+    margin: 10px;
+    height: 10px;
+    -webkit-animation: pulse 1s infinite ease-in-out;
+            animation: pulse 1s infinite ease-in-out;
+  }
+
+  .github-item div:nth-child(1) {
+    width: 25%;
+  }
+  .github-item div:nth-child(2) {
+    width: 150px;
+  }
+
+@-webkit-keyframes pulse {
+    0% {
+      background-color: rgba(165, 165, 165, 0.1);
+    }
+    50% {
+      background-color: rgba(165, 165, 165, 0.3);
+    }
+    100% {
+      background-color: rgba(165, 165, 165, 0.1);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      background-color: rgba(165, 165, 165, 0.1);
+    }
+    50% {
+      background-color: rgba(165, 165, 165, 0.3);
+    }
+    100% {
+      background-color: rgba(165, 165, 165, 0.1);
+    }
+  }
+  
+@media (prefers-color-scheme: dark) { 
+    body{
+        background-color: var(--black);
+        color: var(--white);
+    }
+    .github-item{
+        color: var(--white);
+        background-color: #2C2C2C;
+    }
+  }
+  
+
 @keyframes fadeIn {
   0% {
     opacity:0;

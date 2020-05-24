@@ -3,10 +3,12 @@
 :root{
   --yellow: #FFE66D;
   --red: #FF6B6B;
-  --white: #F6F7EB;
-  --blue: #80CED7;
-  --black:  #292F36;
-  --green: #6cbe45;
+  --white: #F7FFF7;
+  --blue: #5EFC8D;
+  --black:  #151515;
+  --grey: #DEE6DE;
+  --dark-grey: #373F51;
+  --green: #5EFC8D;
   --purple: #6320EE;
 
    /* Base spacing unit. */

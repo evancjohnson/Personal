@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         wrapper.style.display = "none";
         wrapper.classList.add("fade-in");
         wrapper.style.display = "";
-        
+
     }
 
     function SetupPagination(items, wrapper, rowsPerPage) {
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     var service = new GitHubService("microsoft");
     var projects = document.querySelectorAll("#projects");
 
-    setTimeout(function(){ setup() }, 3000);
+    setTimeout(function () { setup() }, 3000);
 
     function setup() {
         service.getRepositories().then(function (response) {
@@ -82,8 +82,33 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
     function listOfProjects(responseJson) {
-        var projects = responseJson.map(project => `<div class="github-item"><i class="fab fa-github"></i> <a href='${project.html_url}'>${project.name}</a><p>${project.description}</p><div class="github-item-metadata" >${getStars(project)} ${getBranches(project)} Last Updated ${TimeAgo(Date.now() - new Date(project.updated_at))}</div></div>`);
+        var projects = responseJson.map(project => `<div class="github-item"><i class="fab fa-github"></i> <a href='${project.html_url}'>${project.name}</a><p>${project.description === null ? "No description set..." : `${project.description}`}</p><div class="github-item-metadata" >${getLanguage(project)} ${getStars(project)} ${getBranches(project)} Last Updated ${TimeAgo(Date.now() - new Date(project.updated_at))}</div></div>`);
         return projects;
+    }
+
+    function getLanguage(project) {
+        if (project === undefined || project.language === undefined || project.language === null)
+            return "";
+
+        console.log(project.language);
+        switch (project.language.toLowerCase()) {
+            case "javascript":
+                return `<p style="margin-right: 2%"><i class="fab fa-js"></i></p>`;
+
+            case "html":
+                return `<p style="margin-right: 2%"><i class="fab fa-html5"></i></p>`;
+
+            case "css":
+                return `<p style="margin-right: 2%"><i class="fab fa-css3-alt"></i></p>`;
+
+            case "python":
+                return `<p style="margin-right: 2%"><i class="fab fa-python"></i></p>`;
+
+            case "java":
+                return `<p style="margin-right: 2%"><i class="fab fa-java"></i></p>`;
+            default:
+                return "";
+        }
     }
 
     function getStars(project) {

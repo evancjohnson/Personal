@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
 
-    var service = new GitHubService("microsoft");
+    var service = new GitHubService("evancjohnson");
     var projects = document.querySelectorAll("#projects");
 
     setTimeout(function () { setup() }, 3000);

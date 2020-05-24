@@ -26,7 +26,7 @@
     border: 1px var(--black) solid;
     padding: .5em;
     border-radius: 4px;
-    font-size: 1.25em;
+    font-size: .75em;
 }
 
 .twitter {
@@ -246,6 +246,9 @@
 }
 
 @media (min-width: 576px) { 
+    .github-item{
+        font-size:.75em;
+    }
     .technologies-list{
         grid-template-columns: 1fr;
     }
@@ -261,7 +264,10 @@
  }
 
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
+    .github-item{
+        font-size: 1em;
+    } 
     .technologies-list{
         grid-template-columns: 1fr 1fr;
     }
@@ -272,6 +278,9 @@
 
 
 @media (min-width: 992px) {
+    .github-item{
+        font-size: 1.25em;
+    }
     .landing {
         grid-template-columns: 1fr 1fr;
     } 
@@ -282,6 +291,9 @@
 
 
 @media (min-width: 1200px) {
+    .github-item{
+        font-size: 1.25em;
+    }
     .landing {
         grid-template-columns: 1fr 1fr;
     } 

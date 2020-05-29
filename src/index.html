@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Evan Johnson Personal Website">
+    <meta name="keywords" content="Evan, Johnson, Evan Johnson, Evan C Johnson">
+    <meta name="author" content="Evan Johnson">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/index.css">
     <script src="https://kit.fontawesome.com/24873183d0.js" crossorigin="anonymous"></script>
@@ -26,7 +29,13 @@
                 </div>
             </div>
             <div class="landing-image">
-                <img src="images/evan.JPG" alt="My Picture">
+                <picture>
+                    <source media="(max-width: 599px)" srcset="images/evan-small.jpg">
+                    <source media="(min-width: 600px)" srcset="images/evan-med.jpg">
+                    <source media="(min-width: 900px)" srcset="images/evan-large.jpg">
+                    <img src="images/evan-small.jpg" alt="My Picture">
+                </picture>
+                <!-- <img src="images/evan.JPG" srcset="" alt="My Picture"> -->
             </div>
         </div>
         <hr>
@@ -98,7 +107,7 @@
                             <i class="fab fa-github" aria-hidden="true"></i>
                             <div class='text-input__loading--line'></div>
                         </div>
-                        
+
                         <div class='text-input__loading--line' style="width: 66%;"></div>
                         <div class='text-input__loading--line' style="width: 35%;"></div>
                     </div>
@@ -109,7 +118,7 @@
                             <i class="fab fa-github" aria-hidden="true"></i>
                             <div class='text-input__loading--line'></div>
                         </div>
-                        
+
                         <div class='text-input__loading--line' style="width: 80%;"></div>
                         <div class='text-input__loading--line' style="width: 15%;"></div>
                     </div>
@@ -120,7 +129,7 @@
                             <i class="fab fa-github" aria-hidden="true"></i>
                             <div class='text-input__loading--line'></div>
                         </div>
-                        
+
                         <div class='text-input__loading--line' style="width: 59%;"></div>
                         <div class='text-input__loading--line' style="width: 40%;"></div>
                     </div>
